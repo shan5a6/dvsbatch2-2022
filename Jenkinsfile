@@ -10,5 +10,14 @@ pipeline {
         }
       }
     }
+    stage("Code build"){
+      steps {
+        script {
+          sh """
+          echo "Hi we are building the code"
+          """
+        }
+      }
+    }    
   }
 }
